@@ -34,7 +34,15 @@ class Manager(User):
     base_pay = 20.00
     department = "General"
     pin_number = "2345"
-    
+
+    def getLoginInfo(self):
+        entry_name = input("Enter your name: ")
+        entry_pin = input("Enter your pin: ")
+        entry_email = input("Enter your email: ")
+        if (entry_pin == self.pin_number and entry_email == self.email):
+            print("Welcome back, {}!".format(entry_name))
+        else:
+            print("The pin or email is incorrect")
     
     
 
