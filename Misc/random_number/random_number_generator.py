@@ -2,10 +2,9 @@ import random
 
 # Generates random number and saves it inside a variable
 ran_num = random.randint(0,100)
-x = True
 # Defines a counter
 counter = 0
-while x == True:
+while True:
     # Takes input from user
     user_input = input('Guess a number between 0 and 100!\n')
     # Turns user_input into an integer, so that it's the same value type as ran_num
@@ -32,7 +31,7 @@ while x == True:
         elif counter > 5 and  counter < 10:
             # Rewards the player with 3 gold stars
             print("You did good, winning 3 gold stars!")
-        elif counter > 10:
+        elif counter > 9:
             # Rewards the player with 0 gold stars
             print("You did badly, winning 0 gold stars.")
         # Converts counter to str so it can be concatenated with a string
